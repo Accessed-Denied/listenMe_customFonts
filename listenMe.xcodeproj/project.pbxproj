@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		FA84507C24802C5200A6FDFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84507B24802C5200A6FDFF /* AppDelegate.swift */; };
 		FA84507E24802C5200A6FDFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84507D24802C5200A6FDFF /* SceneDelegate.swift */; };
-		FA84508024802C5200A6FDFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84507F24802C5200A6FDFF /* ViewController.swift */; };
+		FA84508024802C5200A6FDFF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84507F24802C5200A6FDFF /* HomeVC.swift */; };
 		FA84508324802C5200A6FDFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA84508124802C5200A6FDFF /* Main.storyboard */; };
 		FA84508524802C5700A6FDFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA84508424802C5700A6FDFF /* Assets.xcassets */; };
 		FA84508824802C5700A6FDFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA84508624802C5700A6FDFF /* LaunchScreen.storyboard */; };
+		FA84509524802FA600A6FDFF /* Segoe UI Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84509124802FA600A6FDFF /* Segoe UI Italic.ttf */; };
+		FA84509624802FA600A6FDFF /* Segoe UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84509224802FA600A6FDFF /* Segoe UI.ttf */; };
+		FA84509724802FA600A6FDFF /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84509324802FA600A6FDFF /* Segoe UI Bold.ttf */; };
+		FA84509824802FA600A6FDFF /* Segoe UI Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84509424802FA600A6FDFF /* Segoe UI Bold Italic.ttf */; };
+		FA84509A2480416F00A6FDFF /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8450992480416F00A6FDFF /* ResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA84507824802C5200A6FDFF /* listenMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA84507B24802C5200A6FDFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA84507D24802C5200A6FDFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA84507F24802C5200A6FDFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA84507F24802C5200A6FDFF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FA84508224802C5200A6FDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA84508424802C5700A6FDFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA84508724802C5700A6FDFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA84508924802C5700A6FDFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA84509124802FA600A6FDFF /* Segoe UI Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Italic.ttf"; sourceTree = "<group>"; };
+		FA84509224802FA600A6FDFF /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
+		FA84509324802FA600A6FDFF /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
+		FA84509424802FA600A6FDFF /* Segoe UI Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold Italic.ttf"; sourceTree = "<group>"; };
+		FA8450992480416F00A6FDFF /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		FA84507A24802C5200A6FDFF /* listenMe */ = {
 			isa = PBXGroup;
 			children = (
+				FA84508F24802E9E00A6FDFF /* CustomFont */,
 				FA84507B24802C5200A6FDFF /* AppDelegate.swift */,
 				FA84507D24802C5200A6FDFF /* SceneDelegate.swift */,
-				FA84507F24802C5200A6FDFF /* ViewController.swift */,
+				FA84507F24802C5200A6FDFF /* HomeVC.swift */,
+				FA8450992480416F00A6FDFF /* ResultVC.swift */,
 				FA84508124802C5200A6FDFF /* Main.storyboard */,
 				FA84508424802C5700A6FDFF /* Assets.xcassets */,
 				FA84508624802C5700A6FDFF /* LaunchScreen.storyboard */,
 				FA84508924802C5700A6FDFF /* Info.plist */,
 			);
 			path = listenMe;
+			sourceTree = "<group>";
+		};
+		FA84508F24802E9E00A6FDFF /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				FA84509024802FA600A6FDFF /* segoe-ui-4-cufonfonts */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		FA84509024802FA600A6FDFF /* segoe-ui-4-cufonfonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA84509124802FA600A6FDFF /* Segoe UI Italic.ttf */,
+				FA84509224802FA600A6FDFF /* Segoe UI.ttf */,
+				FA84509324802FA600A6FDFF /* Segoe UI Bold.ttf */,
+				FA84509424802FA600A6FDFF /* Segoe UI Bold Italic.ttf */,
+			);
+			path = "segoe-ui-4-cufonfonts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA84508824802C5700A6FDFF /* LaunchScreen.storyboard in Resources */,
+				FA84509724802FA600A6FDFF /* Segoe UI Bold.ttf in Resources */,
 				FA84508524802C5700A6FDFF /* Assets.xcassets in Resources */,
+				FA84509624802FA600A6FDFF /* Segoe UI.ttf in Resources */,
+				FA84509524802FA600A6FDFF /* Segoe UI Italic.ttf in Resources */,
+				FA84509824802FA600A6FDFF /* Segoe UI Bold Italic.ttf in Resources */,
 				FA84508324802C5200A6FDFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +173,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA84508024802C5200A6FDFF /* ViewController.swift in Sources */,
+				FA84508024802C5200A6FDFF /* HomeVC.swift in Sources */,
+				FA84509A2480416F00A6FDFF /* ResultVC.swift in Sources */,
 				FA84507C24802C5200A6FDFF /* AppDelegate.swift in Sources */,
 				FA84507E24802C5200A6FDFF /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = listenMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = listenMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

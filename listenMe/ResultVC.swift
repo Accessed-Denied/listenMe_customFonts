@@ -16,7 +16,15 @@ class ResultVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - viewWillAppear
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
 
+    //MARK: - backBtnIsClicked
+    @IBAction func backBtnIsClicked(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: false)
+    }
     /*
     // MARK: - Navigation
 
