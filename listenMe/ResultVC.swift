@@ -9,10 +9,15 @@
 import UIKit
 
 class ResultVC: UIViewController {
+    
+    var lyrics: String = ""
 
+    @IBOutlet weak var songTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(lyrics)
+        songTextView.text = lyrics
         // Do any additional setup after loading the view.
     }
     

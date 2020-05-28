@@ -18,6 +18,10 @@
 		FA84509724802FA600A6FDFF /* Segoe UI Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84509324802FA600A6FDFF /* Segoe UI Bold.ttf */; };
 		FA84509824802FA600A6FDFF /* Segoe UI Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA84509424802FA600A6FDFF /* Segoe UI Bold Italic.ttf */; };
 		FA84509A2480416F00A6FDFF /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8450992480416F00A6FDFF /* ResultVC.swift */; };
+		FA84509D248045E600A6FDFF /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84509C248045E600A6FDFF /* HttpUtility.swift */; };
+		FA84509F2480477E00A6FDFF /* searchSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA84509E2480477E00A6FDFF /* searchSong.swift */; };
+		FA8450A1248047E000A6FDFF /* searchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8450A0248047E000A6FDFF /* searchRequest.swift */; };
+		FA8450A32480480F00A6FDFF /* searchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8450A22480480F00A6FDFF /* searchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		FA84509324802FA600A6FDFF /* Segoe UI Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold.ttf"; sourceTree = "<group>"; };
 		FA84509424802FA600A6FDFF /* Segoe UI Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI Bold Italic.ttf"; sourceTree = "<group>"; };
 		FA8450992480416F00A6FDFF /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
+		FA84509C248045E600A6FDFF /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		FA84509E2480477E00A6FDFF /* searchSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchSong.swift; sourceTree = "<group>"; };
+		FA8450A0248047E000A6FDFF /* searchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchRequest.swift; sourceTree = "<group>"; };
+		FA8450A22480480F00A6FDFF /* searchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		FA84507A24802C5200A6FDFF /* listenMe */ = {
 			isa = PBXGroup;
 			children = (
+				FA84509B248045CA00A6FDFF /* Resouces */,
 				FA84508F24802E9E00A6FDFF /* CustomFont */,
 				FA84507B24802C5200A6FDFF /* AppDelegate.swift */,
 				FA84507D24802C5200A6FDFF /* SceneDelegate.swift */,
@@ -75,6 +84,8 @@
 				FA84508424802C5700A6FDFF /* Assets.xcassets */,
 				FA84508624802C5700A6FDFF /* LaunchScreen.storyboard */,
 				FA84508924802C5700A6FDFF /* Info.plist */,
+				FA8450A0248047E000A6FDFF /* searchRequest.swift */,
+				FA8450A22480480F00A6FDFF /* searchResponse.swift */,
 			);
 			path = listenMe;
 			sourceTree = "<group>";
@@ -96,6 +107,15 @@
 				FA84509424802FA600A6FDFF /* Segoe UI Bold Italic.ttf */,
 			);
 			path = "segoe-ui-4-cufonfonts";
+			sourceTree = "<group>";
+		};
+		FA84509B248045CA00A6FDFF /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				FA84509C248045E600A6FDFF /* HttpUtility.swift */,
+				FA84509E2480477E00A6FDFF /* searchSong.swift */,
+			);
+			path = Resouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA84509D248045E600A6FDFF /* HttpUtility.swift in Sources */,
 				FA84508024802C5200A6FDFF /* HomeVC.swift in Sources */,
+				FA84509F2480477E00A6FDFF /* searchSong.swift in Sources */,
 				FA84509A2480416F00A6FDFF /* ResultVC.swift in Sources */,
+				FA8450A32480480F00A6FDFF /* searchResponse.swift in Sources */,
+				FA8450A1248047E000A6FDFF /* searchRequest.swift in Sources */,
 				FA84507C24802C5200A6FDFF /* AppDelegate.swift in Sources */,
 				FA84507E24802C5200A6FDFF /* SceneDelegate.swift in Sources */,
 			);

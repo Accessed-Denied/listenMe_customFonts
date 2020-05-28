@@ -9,6 +9,8 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
+    var lyrics: String = ""
 
     @IBOutlet weak var searchBtn: UIButton!
     override func viewDidLoad() {
@@ -29,8 +31,32 @@ class HomeVC: UIViewController {
 
     //MARK: - searchBtnIsClicked
     @IBAction func searchBtnIsClicked(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultVC") as! ResultVC
-        self.navigationController?.pushViewController(vc, animated: false)
+        httpUtility()
+        
     }
-}
+    
+    func httpUtility() {
+        let url = URL(string: "https://api.lyrics.ovh/v1/Maroon_5/Memories")
+        let request = URLRequest(url: url!)
+    
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+          if let response = response {
+            print("1\(response)")
+    
+            if let data = data, let body = String(data: data, encoding: .utf8) {
+              print("2\(body)")
+                DispatchQueue.main.async {
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ResultVC") as! ResultVC
+                    vc.lyrics = body
+                    self.navigationController?.pushViewController(vc, animated: false)
+                }
+            }
+          } else {
+            print(error ?? "Unknown error")
+          }
+        }
+    
+        task.resume()
+    }
 
+}
